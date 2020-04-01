@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.demo.dao.AreaDAO">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.example.demo.entity.Area" id="areaMap">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="code" column="code"/>
+        <result property="areaType" column="area_type"/>
+        <result property="parentId" column="parent_id"/>
+        <result property="ancestors" column="ancestors"/>
+        <result property="deleted" column="is_deleted"/>
+    </resultMap>
+
+    <resultMap id="VOResultMap" type="com.example.demo.entity.AreaVO">
+        <result property="districtId" column="district_id"/>
+        <result property="districtName" column="district_name"/>
+        <result property="districtCode" column="district_code"/>
+        <result property="cityId" column="city_id"/>
+        <result property="cityName" column="city_name"/>
+        <result property="cityCode" column="city_code"/>
+        <result property="provinceId" column="province_id"/>
+        <result property="provinceName" column="province_name"/>
+        <result property="provinceCode" column="province_code"/>
+        <result property="countryId" column="country_id"/>
+        <result property="countryName" column="country_name"/>
+        <result property="countryCode" column="country_code"/>
+    </resultMap>
+
+    <select id="selectVOList" resultMap="VOResultMap">
+        select district.id as district_id, district.name as district_name, district.code as district_code,
+           city.id as city_id, city.name as city_name, city.code as city_code,
+           province.id as province_id, province.name as province_name, province.code as province_code,
+           country.id as country_id, country.name as country_name, country.code as country_code
+        from sys_area district
+        left join sys_area city on city.id = district.parent_id
+        left join sys_area province on province.id = city.parent_id
+        left join sys_area country on country.id = province.parent_id
+        ${ew.customSqlSegment}
+    </select>
+</mapper>

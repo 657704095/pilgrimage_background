@@ -1,0 +1,112 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  #如果需要启用devtools, 请设置enable 为 true
+  devtools:
+    restart:
+      enabled: true
+  # 模板引擎
+  thymeleaf:
+    mode: HTML
+    encoding: utf-8
+    # 禁用缓存
+    cache: false
+  # 资源信息
+  messages:
+    # 国际化资源文件路径
+    basename: i18n/messages
+  # 环境 dev|test|prod
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+10
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+#  freemarker:
+#    suffix: .html
+#    request-context-attribute: request
+
+
+aussiechem:
+  name: Aussiechem
+  version: 1.0.0
+  copyrightYear: 2019
+  cluster: false  #集群配置  true集群环境   false单机环境，还需打开pom.xml里的spring-session-data-redis注释
+  addressEnabled: true # 获取ip地址开关
+  globalSessionTimeout: 3600   #单机环境，session过期时间为60分钟
+  redis:
+    open: false  #是否开启redis缓存  true开启   false关闭
+  shiro:
+    user:
+      loginUrl: /login.html     # 登录地址
+      unauthorizedUrl: /unauth.html    # 权限认证失败地址
+      indexUrl: /index.html    # 首页地址
+      captchaEnabled: true    # 验证码开关
+      captchaType: char   # 验证码Type math 数组计算 char 字符
+    cookie:
+      domain:   # 设置Cookie的域名 默认空，即当前访问的域名
+      path: /     # 设置cookie的有效访问路径
+      httpOnly: true  # 设置HttpOnly属性
+      maxAge: 30  # 设置Cookie的过期时间，天为单位
+
+#mybatis
+mybatis-plus:
+  mapper-locations: classpath:mapper/**/*.xml, classpath:mapper/*.xml
+  #实体扫描，多个package用逗号或者分号分隔
+  type-aliases-package: com.example.demo.entity
+  #type-aliases-super-type: java.lang.Object
+  type-enums-package: com.example.demo
+  type-handlers-package: com.example.demo
+  global-config:
+    #刷新mapper 调试神器
+    refresh: true
+    #是否缓存Sql解析 默认不缓存
+    sql-parser-cache: false
+    #sql-session:
+    #sql-session-factory:
+    db-config:
+      #数据库Type,com.baomidou.mybatisplus.annotation.DbType
+      db-type: mysql
+      #是否开启大写命名，默认不开启。
+      capital-mode: false
+      #是否开启 LIKE 查询，即根据 entity 自动生成的 where 条件中 String Type字段 是否使用 LIKE，默认不开启
+      column-like: false
+      #字段策略 com.baomidou.mybatisplus.annotation.FieldStrategy
+      # IGNORED:"忽略判断",NOT_NULL:"非 NULL 判断",NOT_EMPTY:"非空判断" 
+      field-strategy: not_null
+      #全局默认主键Type com.baomidou.mybatisplus.annotation.IdType
+      # AUTO:"数据库ID自增";INPUT:"用户输入ID";ID_WORKER:"全局唯一ID (数字Type唯一ID)";UUID:"全局唯一ID UUID"; ID_WORKER_STR:字符串全局唯一ID
+      id-type: auto
+      # 逻辑删除配置
+      logic-delete-value: id
+      logic-not-delete-value: 0
+      # 表名前缀
+      table-prefix: 
+      # 表名、是否使用下划线命名，默认数据库表使用下划线命名
+      table-underline: true
+  configuration:
+    default-enum-type-handler: com.baomidou.mybatisplus.extension.handlers.EnumTypeHandler
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    call-setters-on-nulls: true
+
+
+pdf:
+  imgUrl: /aussiechem-admin/src/main/resources/templates/pdf/img_03.png
+  imgUrl2: /aussiechem-admin/src/main/resources/templates/pdf/img_01.png
+  adminAbn: 49 631 001 682
+  invoice: aussiechem-admin/src/main/resources/templates/pdf/bill.html
+  quoteOrder: aussiechem-admin/src/main/resources/templates/pdf/quote.html
+  quoteLogoImg: /aussiechem-admin/src/main/resources/templates/pdf/logo.png
