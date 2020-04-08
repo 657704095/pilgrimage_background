@@ -19,7 +19,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/physicalCondition")
 @Api(value = "健康状况Api",tags="健康状况Api增删该查询")
 @Slf4j
 public class PhysicalCondition {

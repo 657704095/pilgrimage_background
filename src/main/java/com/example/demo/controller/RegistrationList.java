@@ -19,7 +19,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/registrationList")
 @Api(value = "报名列表Api",tags="报名列表Api增删该查询")
 @Slf4j
 public class RegistrationList {

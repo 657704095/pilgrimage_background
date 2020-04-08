@@ -19,7 +19,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/orderManagement")
 @Api(value = "订单管理Api",tags="订单管理Api增删该查询")
 @Slf4j
 public class OrderManagement {
@@ -34,7 +34,7 @@ public class OrderManagement {
         return 0;
     }
 
-    @PostMapping("/modification")
+    @PostMapping("/cancel")
     @ApiOperation(value = "取消接口",notes = "取消接口",httpMethod = "POST")
     public int cancel(@ApiParam(value = "订单状态", required = true)int orderState,
                       @ApiParam(value = "订单编号", required = true)String logisticsNumber

@@ -19,7 +19,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/lawsRegulations")
 @Api(value = "法律法规Api",tags="法律法规Api增删该查询")
 @Slf4j
 public class LawsRegulations {

@@ -86,3 +86,431 @@
 2020-04-08 10:32:10,916 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-04-08 10:32:10,916 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
 2020-04-08 10:32:10,924 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 8 ms
+2020-04-08 14:41:08,870 [INFO] [main] com.example.demo.DemoApplication [StartupInfoLogger.java : 50] Starting DemoApplication on DESKTOP-OBG694H with PID 11556 (D:\tool\old-project\company-project\pilgrimage_background\target\classes started by skylong in D:\tool\old-project\company-project\pilgrimage_background)
+2020-04-08 14:41:08,877 [INFO] [main] com.example.demo.DemoApplication [SpringApplication.java : 679] The following profiles are active: dev
+2020-04-08 14:41:10,225 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 14:41:10,227 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 14:41:10,265 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 19ms. Found 0 repository interfaces.
+2020-04-08 14:41:10,695 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e5649b6d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 14:41:11,211 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 8080 (http)
+2020-04-08 14:41:11,242 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2020-04-08 14:41:11,243 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-04-08 14:41:11,451 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2020-04-08 14:41:11,452 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 296] Root WebApplicationContext: initialization completed in 2509 ms
+2020-04-08 14:41:11,915 [WARN] [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java : 557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customizePilgrimage' method 
+public com.example.demo.dto.ReturnDataModel com.example.demo.controller.CustomizePilgrimage.findById(int)
+to {GET /transformInterface/findById}: There is already 'administratorGroup' bean method
+public com.example.demo.dto.ReturnDataModel com.example.demo.controller.AdministratorGroup.findById(int) mapped.
+2020-04-08 14:41:11,919 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Stopping service [Tomcat]
+2020-04-08 14:41:11,949 [INFO] [main] o.s.b.a.logging.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java : 142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-08 14:41:11,962 [ERROR] [main] org.springframework.boot.SpringApplication [SpringApplication.java : 858] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customizePilgrimage' method 
+public com.example.demo.dto.ReturnDataModel com.example.demo.controller.CustomizePilgrimage.findById(int)
+to {GET /transformInterface/findById}: There is already 'administratorGroup' bean method
+public com.example.demo.dto.ReturnDataModel com.example.demo.controller.AdministratorGroup.findById(int) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:19)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customizePilgrimage' method 
+public com.example.demo.dto.ReturnDataModel com.example.demo.controller.CustomizePilgrimage.findById(int)
+to {GET /transformInterface/findById}: There is already 'administratorGroup' bean method
+public com.example.demo.dto.ReturnDataModel com.example.demo.controller.AdministratorGroup.findById(int) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customizePilgrimage' method 
+public com.example.demo.dto.ReturnDataModel com.example.demo.controller.CustomizePilgrimage.findById(int)
+to {GET /transformInterface/findById}: There is already 'administratorGroup' bean method
+public com.example.demo.dto.ReturnDataModel com.example.demo.controller.AdministratorGroup.findById(int) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customizePilgrimage' method 
+public com.example.demo.dto.ReturnDataModel com.example.demo.controller.CustomizePilgrimage.findById(int)
+to {GET /transformInterface/findById}: There is already 'administratorGroup' bean method
+public com.example.demo.dto.ReturnDataModel com.example.demo.controller.AdministratorGroup.findById(int) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 50 common frames omitted
+2020-04-08 14:50:04,582 [INFO] [main] com.example.demo.DemoApplication [StartupInfoLogger.java : 50] Starting DemoApplication on DESKTOP-OBG694H with PID 16980 (D:\tool\old-project\company-project\pilgrimage_background\target\classes started by skylong in D:\tool\old-project\company-project\pilgrimage_background)
+2020-04-08 14:50:04,593 [INFO] [main] com.example.demo.DemoApplication [SpringApplication.java : 679] The following profiles are active: dev
+2020-04-08 14:50:06,113 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 14:50:06,117 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 14:50:06,172 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 30ms. Found 0 repository interfaces.
+2020-04-08 14:50:06,731 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$180d49ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 14:50:07,300 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 8080 (http)
+2020-04-08 14:50:07,335 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2020-04-08 14:50:07,336 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-04-08 14:50:07,580 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2020-04-08 14:50:07,581 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 296] Root WebApplicationContext: initialization completed in 2890 ms
+2020-04-08 14:50:08,043 [WARN] [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java : 557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customizePilgrimage' method 
+public int com.example.demo.controller.CustomizePilgrimage.modification(int,java.lang.String,double,java.lang.String,java.lang.String)
+to {POST /transformInterface/modification}: There is already 'administratorGroup' bean method
+public int com.example.demo.controller.AdministratorGroup.modification(int,int) mapped.
+2020-04-08 14:50:08,047 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Stopping service [Tomcat]
+2020-04-08 14:50:08,071 [INFO] [main] o.s.b.a.logging.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java : 142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-08 14:50:08,082 [ERROR] [main] org.springframework.boot.SpringApplication [SpringApplication.java : 858] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customizePilgrimage' method 
+public int com.example.demo.controller.CustomizePilgrimage.modification(int,java.lang.String,double,java.lang.String,java.lang.String)
+to {POST /transformInterface/modification}: There is already 'administratorGroup' bean method
+public int com.example.demo.controller.AdministratorGroup.modification(int,int) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:19)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customizePilgrimage' method 
+public int com.example.demo.controller.CustomizePilgrimage.modification(int,java.lang.String,double,java.lang.String,java.lang.String)
+to {POST /transformInterface/modification}: There is already 'administratorGroup' bean method
+public int com.example.demo.controller.AdministratorGroup.modification(int,int) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customizePilgrimage' method 
+public int com.example.demo.controller.CustomizePilgrimage.modification(int,java.lang.String,double,java.lang.String,java.lang.String)
+to {POST /transformInterface/modification}: There is already 'administratorGroup' bean method
+public int com.example.demo.controller.AdministratorGroup.modification(int,int) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'customizePilgrimage' method 
+public int com.example.demo.controller.CustomizePilgrimage.modification(int,java.lang.String,double,java.lang.String,java.lang.String)
+to {POST /transformInterface/modification}: There is already 'administratorGroup' bean method
+public int com.example.demo.controller.AdministratorGroup.modification(int,int) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 50 common frames omitted
+2020-04-08 15:00:45,875 [INFO] [main] com.example.demo.DemoApplication [StartupInfoLogger.java : 50] Starting DemoApplication on DESKTOP-OBG694H with PID 19624 (D:\tool\old-project\company-project\pilgrimage_background\target\classes started by skylong in D:\tool\old-project\company-project\pilgrimage_background)
+2020-04-08 15:00:45,879 [INFO] [main] com.example.demo.DemoApplication [SpringApplication.java : 679] The following profiles are active: dev
+2020-04-08 15:00:47,176 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 15:00:47,180 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 15:00:47,227 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.
+2020-04-08 15:00:47,733 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$df53801b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 15:00:48,295 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 8080 (http)
+2020-04-08 15:00:48,332 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2020-04-08 15:00:48,333 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-04-08 15:00:48,563 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2020-04-08 15:00:48,564 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 296] Root WebApplicationContext: initialization completed in 2617 ms
+2020-04-08 15:00:49,036 [WARN] [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext [AbstractApplicationContext.java : 557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'orderManagement' method 
+public int com.example.demo.controller.OrderManagement.modification(int,java.lang.String,java.lang.String)
+to {POST /orderManagement/modification}: There is already 'orderManagement' bean method
+public int com.example.demo.controller.OrderManagement.cancel(int,java.lang.String) mapped.
+2020-04-08 15:00:49,042 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Stopping service [Tomcat]
+2020-04-08 15:00:49,068 [INFO] [main] o.s.b.a.logging.ConditionEvaluationReportLoggingListener [ConditionEvaluationReportLoggingListener.java : 142] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-08 15:00:49,085 [ERROR] [main] org.springframework.boot.SpringApplication [SpringApplication.java : 858] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'orderManagement' method 
+public int com.example.demo.controller.OrderManagement.modification(int,java.lang.String,java.lang.String)
+to {POST /orderManagement/modification}: There is already 'orderManagement' bean method
+public int com.example.demo.controller.OrderManagement.cancel(int,java.lang.String) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:19)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/skylong/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'orderManagement' method 
+public int com.example.demo.controller.OrderManagement.modification(int,java.lang.String,java.lang.String)
+to {POST /orderManagement/modification}: There is already 'orderManagement' bean method
+public int com.example.demo.controller.OrderManagement.cancel(int,java.lang.String) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'orderManagement' method 
+public int com.example.demo.controller.OrderManagement.modification(int,java.lang.String,java.lang.String)
+to {POST /orderManagement/modification}: There is already 'orderManagement' bean method
+public int com.example.demo.controller.OrderManagement.cancel(int,java.lang.String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1463)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1318)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'orderManagement' method 
+public int com.example.demo.controller.OrderManagement.modification(int,java.lang.String,java.lang.String)
+to {POST /orderManagement/modification}: There is already 'orderManagement' bean method
+public int com.example.demo.controller.OrderManagement.cancel(int,java.lang.String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.assertUniqueMethodMapping(AbstractHandlerMethodMapping.java:618)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:586)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:312)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:282)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:280)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:252)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:211)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:199)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 50 common frames omitted
+2020-04-08 15:01:58,299 [INFO] [main] com.example.demo.DemoApplication [StartupInfoLogger.java : 50] Starting DemoApplication on DESKTOP-OBG694H with PID 10076 (D:\tool\old-project\company-project\pilgrimage_background\target\classes started by skylong in D:\tool\old-project\company-project\pilgrimage_background)
+2020-04-08 15:01:58,304 [INFO] [main] com.example.demo.DemoApplication [SpringApplication.java : 679] The following profiles are active: dev
+2020-04-08 15:01:59,577 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 244] Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-08 15:01:59,580 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-04-08 15:01:59,614 [INFO] [main] o.s.data.repository.config.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java : 182] Finished Spring Data repository scanning in 18ms. Found 0 repository interfaces.
+2020-04-08 15:02:00,039 [INFO] [main] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [PostProcessorRegistrationDelegate.java : 330] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c85a5e67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-08 15:02:00,523 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 90] Tomcat initialized with port(s): 8080 (http)
+2020-04-08 15:02:00,553 [INFO] [main] org.apache.catalina.core.StandardService [DirectJDKLog.java : 173] Starting service [Tomcat]
+2020-04-08 15:02:00,554 [INFO] [main] org.apache.catalina.core.StandardEngine [DirectJDKLog.java : 173] Starting Servlet engine: [Apache Tomcat/9.0.17]
+2020-04-08 15:02:00,745 [INFO] [main] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring embedded WebApplicationContext
+2020-04-08 15:02:00,746 [INFO] [main] org.springframework.web.context.ContextLoader [ServletWebServerApplicationContext.java : 296] Root WebApplicationContext: initialization completed in 2380 ms
+2020-04-08 15:02:01,342 [INFO] [main] s.d.spring.web.PropertySourcedRequestMappingHandlerMapping [PropertySourcedRequestMappingHandlerMapping.java : 69] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-04-08 15:02:01,463 [INFO] [main] c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure [DruidDataSourceAutoConfigure.java : 56] Init DruidDataSource
+2020-04-08 15:02:01,779 [INFO] [main] com.alibaba.druid.pool.DruidDataSource [DruidDataSource.java : 1003] {dataSource-1} inited
+2020-04-08 15:02:02,165 [INFO] [main] o.s.scheduling.concurrent.ThreadPoolTaskExecutor [ExecutorConfigurationSupport.java : 171] Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 15:02:02,813 [INFO] [main] s.d.spring.web.plugins.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 160] Context refreshed
+2020-04-08 15:02:02,843 [INFO] [main] s.d.spring.web.plugins.DocumentationPluginsBootstrapper [DocumentationPluginsBootstrapper.java : 163] Found 1 custom documentation plugin(s)
+2020-04-08 15:02:02,889 [INFO] [main] s.d.spring.web.scanners.ApiListingReferenceScanner [ApiListingReferenceScanner.java : 41] Scanning for api listing references
+2020-04-08 15:02:03,103 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_1
+2020-04-08 15:02:03,106 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_1
+2020-04-08 15:02:03,109 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_1
+2020-04-08 15:02:03,111 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_1
+2020-04-08 15:02:03,113 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_2
+2020-04-08 15:02:03,116 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_2
+2020-04-08 15:02:03,118 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_2
+2020-04-08 15:02:03,124 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_1
+2020-04-08 15:02:03,126 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_2
+2020-04-08 15:02:03,127 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_3
+2020-04-08 15:02:03,130 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_3
+2020-04-08 15:02:03,135 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_3
+2020-04-08 15:02:03,138 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_2
+2020-04-08 15:02:03,140 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_3
+2020-04-08 15:02:03,142 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_4
+2020-04-08 15:02:03,144 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_4
+2020-04-08 15:02:03,147 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_4
+2020-04-08 15:02:03,149 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_3
+2020-04-08 15:02:03,151 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_4
+2020-04-08 15:02:03,153 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_5
+2020-04-08 15:02:03,155 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_5
+2020-04-08 15:02:03,157 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_5
+2020-04-08 15:02:03,166 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_4
+2020-04-08 15:02:03,168 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_5
+2020-04-08 15:02:03,170 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_6
+2020-04-08 15:02:03,172 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_6
+2020-04-08 15:02:03,175 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_6
+2020-04-08 15:02:03,179 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_5
+2020-04-08 15:02:03,181 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_6
+2020-04-08 15:02:03,182 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_7
+2020-04-08 15:02:03,185 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_7
+2020-04-08 15:02:03,188 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_7
+2020-04-08 15:02:03,191 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_6
+2020-04-08 15:02:03,192 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_7
+2020-04-08 15:02:03,194 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_8
+2020-04-08 15:02:03,196 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_8
+2020-04-08 15:02:03,198 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_8
+2020-04-08 15:02:03,202 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_9
+2020-04-08 15:02:03,203 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_9
+2020-04-08 15:02:03,205 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_9
+2020-04-08 15:02:03,208 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_7
+2020-04-08 15:02:03,211 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_8
+2020-04-08 15:02:03,213 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_10
+2020-04-08 15:02:03,215 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_10
+2020-04-08 15:02:03,217 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_10
+2020-04-08 15:02:03,220 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_8
+2020-04-08 15:02:03,221 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_9
+2020-04-08 15:02:03,223 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_11
+2020-04-08 15:02:03,224 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_11
+2020-04-08 15:02:03,226 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_11
+2020-04-08 15:02:03,229 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_9
+2020-04-08 15:02:03,231 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_10
+2020-04-08 15:02:03,233 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_12
+2020-04-08 15:02:03,235 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_12
+2020-04-08 15:02:03,237 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_12
+2020-04-08 15:02:03,239 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_11
+2020-04-08 15:02:03,241 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_13
+2020-04-08 15:02:03,243 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_13
+2020-04-08 15:02:03,245 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_13
+2020-04-08 15:02:03,248 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_10
+2020-04-08 15:02:03,249 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_12
+2020-04-08 15:02:03,251 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_14
+2020-04-08 15:02:03,253 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_14
+2020-04-08 15:02:03,255 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_14
+2020-04-08 15:02:03,258 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_11
+2020-04-08 15:02:03,260 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_13
+2020-04-08 15:02:03,261 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_15
+2020-04-08 15:02:03,263 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_15
+2020-04-08 15:02:03,265 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_15
+2020-04-08 15:02:03,268 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_12
+2020-04-08 15:02:03,270 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_14
+2020-04-08 15:02:03,271 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_16
+2020-04-08 15:02:03,273 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_16
+2020-04-08 15:02:03,275 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_16
+2020-04-08 15:02:03,278 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_15
+2020-04-08 15:02:03,280 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_17
+2020-04-08 15:02:03,287 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_17
+2020-04-08 15:02:03,290 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_17
+2020-04-08 15:02:03,292 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_13
+2020-04-08 15:02:03,294 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_16
+2020-04-08 15:02:03,295 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_18
+2020-04-08 15:02:03,297 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_18
+2020-04-08 15:02:03,299 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_18
+2020-04-08 15:02:03,302 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_14
+2020-04-08 15:02:03,304 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_17
+2020-04-08 15:02:03,305 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_19
+2020-04-08 15:02:03,307 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_19
+2020-04-08 15:02:03,310 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_19
+2020-04-08 15:02:03,314 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: addUsingPOST_15
+2020-04-08 15:02:03,316 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: delUsingPOST_18
+2020-04-08 15:02:03,317 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByIdUsingGET_20
+2020-04-08 15:02:03,319 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: findByTitleAndBeginTimeAndEndTimeUsingPOST_20
+2020-04-08 15:02:03,321 [INFO] [main] s.d.s.web.readers.operation.CachingOperationNameGenerator [CachingOperationNameGenerator.java : 40] Generating unique operation named: modificationUsingPOST_20
+2020-04-08 15:02:03,385 [INFO] [main] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [TomcatWebServer.java : 204] Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-08 15:02:03,389 [INFO] [main] com.example.demo.DemoApplication [StartupInfoLogger.java : 59] Started DemoApplication in 5.893 seconds (JVM running for 7.401)
+2020-04-08 15:02:29,539 [INFO] [http-nio-8080-exec-1] o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [DirectJDKLog.java : 173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-08 15:02:29,539 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 524] Initializing Servlet 'dispatcherServlet'
+2020-04-08 15:02:29,548 [INFO] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet [FrameworkServlet.java : 546] Completed initialization in 9 ms

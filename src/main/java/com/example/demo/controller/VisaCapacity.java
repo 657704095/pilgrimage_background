@@ -19,7 +19,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/visaCapacity")
 @Api(value = "签证类容Api",tags="签证类容Api增删该查询")
 @Slf4j
 public class VisaCapacity {

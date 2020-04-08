@@ -19,7 +19,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/mattersNeedAttention")
 @Api(value = "注意事项Api",tags="注意事项Api增删该查询")
 @Slf4j
 public class MattersNeedAttention {

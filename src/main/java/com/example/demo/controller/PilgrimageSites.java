@@ -19,7 +19,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/pilgrimageSites")
 @Api(value = "朝圣景点Api",tags="朝圣景点Api增删该查询")
 @Slf4j
 public class PilgrimageSites {

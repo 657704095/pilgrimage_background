@@ -19,10 +19,11 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/outreachWorkers")
 @Api(value = "外联人员Api",tags="外联人员Api增删该查询")
 @Slf4j
 public class OutreachWorkers {
+
     @PostMapping("/add")
     @ApiOperation(value = "添加接口",notes = "添加接口",httpMethod = "POST")
     public int add(@ApiParam(value = "临时团名称", required = true)String groupName,

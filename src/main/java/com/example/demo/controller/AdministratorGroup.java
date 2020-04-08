@@ -16,11 +16,11 @@ import java.util.List;
 /**
  * @author sky-long
  * @data 2020/4/8 14:05
- * class description:
+ * class description: 访问地址http://localhost:8080/swagger-ui.html#/
  */
 @RestController
-@RequestMapping("/transformInterface")
-@Api(value = "轮播Api",tags="轮播Api增删该查询")
+@RequestMapping("/administratorGroup")
+@Api(value = "管理团员Api",tags="管理团员Api增删该查询")
 @Slf4j
 public class AdministratorGroup {
 

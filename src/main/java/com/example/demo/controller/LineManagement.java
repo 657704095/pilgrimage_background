@@ -19,7 +19,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/lineManagement")
 @Api(value = "线路管理Api",tags="线路管理Api增删该查询")
 @Slf4j
 public class LineManagement {

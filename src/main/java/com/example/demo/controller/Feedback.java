@@ -19,7 +19,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/feedback")
 @Api(value = "建议反馈Api",tags="建议反馈Api增删该查询")
 @Slf4j
 public class Feedback {

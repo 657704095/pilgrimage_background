@@ -19,7 +19,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/mallManagement")
 @Api(value = "商城管理Api",tags="商城管理Api增删该查询")
 @Slf4j
 public class MallManagement {

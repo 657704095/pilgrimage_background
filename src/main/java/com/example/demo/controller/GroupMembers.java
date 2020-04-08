@@ -18,7 +18,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/groupMembers")
 @Api(value = "团成员Api",tags="团成员Api增删该查询")
 @Slf4j
 public class GroupMembers {

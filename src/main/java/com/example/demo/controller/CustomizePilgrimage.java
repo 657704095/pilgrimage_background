@@ -19,7 +19,7 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/customizePilgrimage")
 @Api(value = "定制朝圣Api",tags="定制朝圣Api增删该查询")
 @Slf4j
 public class CustomizePilgrimage {

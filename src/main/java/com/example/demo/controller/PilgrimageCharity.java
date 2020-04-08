@@ -19,10 +19,12 @@ import java.util.List;
  * class description:
  */
 @RestController
-@RequestMapping("/transformInterface")
+@RequestMapping("/pilgrimageCharity")
 @Api(value = "朝圣慈善Api",tags="朝圣慈善Api增删该查询")
 @Slf4j
 public class PilgrimageCharity {
+
+
     @PostMapping("/add")
     @ApiOperation(value = "添加接口",notes = "添加接口",httpMethod = "POST")
     public int add(@ApiParam(value = "标题", required = true)String title,
