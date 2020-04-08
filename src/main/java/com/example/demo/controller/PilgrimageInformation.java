@@ -15,55 +15,56 @@ import java.util.List;
 
 /**
  * @author sky-long
- * @data 2020/4/810:02
+ * @data 2020/4/811:17
  * class description:
- * 轮播接口 访问地址http://localhost:8080/swagger-ui.html#/
  */
 @RestController
-@RequestMapping("/transformInterface")
-@Api(value = "轮播Api",tags="轮播Api增删该查询")
+@RequestMapping("/pilgrimageInformation")
+@Api(value = "朝圣信息Api",tags="朝圣信息Api增删该查询")
 @Slf4j
-public class TransformInterface {
-
+public class PilgrimageInformation {
 
     @PostMapping("/add")
-    @ApiOperation(value = "轮播添加接口",notes = "轮播添加接口",httpMethod = "POST")
+    @ApiOperation(value = "朝圣信息添加接口",notes = "朝圣信息添加接口",httpMethod = "POST")
     public int add(@ApiParam(value = "标题", required = true)String title,
                    @ApiParam(value = "缩略图url", required = true)String imgUrl,
+                   @ApiParam(value = "简介", required = true)String intro,
                    @ApiParam(value = "Html介绍", required = true)String html,
                    @ApiParam(value = "顺序", required = true)String order){
         return 0;
     }
 
     @PostMapping("/modification")
-    @ApiOperation(value = "轮播修改接口",notes = "轮播修改接口",httpMethod = "POST")
+    @ApiOperation(value = "朝圣信息修改接口",notes = "朝圣信息修改接口",httpMethod = "POST")
     public int modification(@ApiParam(value = "id", required = true)int id,
-                   @ApiParam(value = "标题", required = true)String title,
-                   @ApiParam(value = "缩略图url", required = true)String imgUrl,
-                   @ApiParam(value = "Html介绍", required = true)String html,
-                   @ApiParam(value = "顺序", required = true)String order){
+                            @ApiParam(value = "标题", required = true)String title,
+                            @ApiParam(value = "缩略图url", required = true)String imgUrl,
+                            @ApiParam(value = "简介", required = true)String intro,
+                            @ApiParam(value = "Html介绍", required = true)String html,
+                            @ApiParam(value = "顺序", required = true)String order){
         return 0;
     }
 
     @PostMapping("/del")
-    @ApiOperation(value = "轮播删除接口",notes = "轮播删除接口",httpMethod = "POST")
+    @ApiOperation(value = "朝圣信息删除接口",notes = "朝圣信息删除接口",httpMethod = "POST")
     public int del(@ApiParam(value = "id", required = true)int id){
         return 0;
     }
 
     @GetMapping("/findById")
-    @ApiOperation(value = "轮播查询接口",notes = "轮播查询接口",httpMethod = "GET")
+    @ApiOperation(value = "朝圣信息查询接口",notes = "朝圣信息查询接口",httpMethod = "GET")
     public ReturnDataModel findById(@ApiParam(value = "id", required = true)int id){
         return null;
     }
 
     @PostMapping("/findByTitleAndBeginTimeAndEndTime")
-    @ApiOperation(value = "轮播查询列表接口",notes = "轮播查询列表接口",httpMethod = "POST")
+    @ApiOperation(value = "朝圣信息查询列表接口",notes = "朝圣信息查询列表接口",httpMethod = "POST")
     public List<ReturnDataModel> findByTitleAndBeginTimeAndEndTime(@ApiParam(value = "标题", required = true)String title,
-    @ApiParam(value = "开始时间", required = true)Date beginTime,
-    @ApiParam(value = "结束时间", required = true) Date endTime){
+                                                                   @ApiParam(value = "开始时间", required = true) Date beginTime,
+                                                                   @ApiParam(value = "结束时间", required = true) Date endTime){
 
         return null;
     }
+
 
 }
