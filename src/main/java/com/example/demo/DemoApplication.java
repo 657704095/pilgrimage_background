@@ -5,7 +5,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.ComponentScan;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+
+@EnableSwagger2
+@ComponentScan(basePackages = {"com.example.demo.controller"})
 @SpringBootApplication
 @MapperScan(basePackages = {"com.example.demo.dao"})
 public class DemoApplication extends SpringBootServletInitializer{
