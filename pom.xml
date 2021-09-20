@@ -38,7 +38,7 @@
         <aliyun.oss.version>2.5.0</aliyun.oss.version>
         <qcloud.cos.version>4.4</qcloud.cos.version>
         <quartz.version>2.3.0</quartz.version>
-        <shiro.version>1.4.0</shiro.version>
+        <shiro.version>1.8.0</shiro.version>
         <snakeyaml.version>1.24</snakeyaml.version>
         <swagger.version>2.9.2</swagger.version>
         <kaptcha.version>0.0.9</kaptcha.version>
